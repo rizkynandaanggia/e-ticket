@@ -1,0 +1,96 @@
+body {
+    background: #141414; /* Warna biru gelap seperti di Netflix */
+    font-family: 'Arial', sans-serif;
+    color: #ffffff; /* Warna teks putih agar kontras dengan background */
+}
+
+.container {
+    margin-top: 2rem;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #1f1f1f; /* Biru gelap dengan tone lebih terang */
+}
+
+h1 {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #e50914; /* Warna merah khas Netflix */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #333333; /* Warna dasar card */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card-body {
+    position: relative;
+}
+
+.card-body h5 {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #ffffff; /* Warna teks putih */
+}
+
+.card-body p {
+    font-size: 0.9rem;
+    color: #b3b3b3; /* Warna teks abu-abu */
+}
+
+.rating {
+    font-size: 0.9rem;
+    color: #ffcc00;
+}
+
+.modal-header {
+    background-color: #e50914; /* Warna merah khas Netflix */
+    color: white;
+}
+
+.modal-body {
+    padding: 2rem;
+    background-color: #141414; /* Latar belakang modal lebih gelap */
+}
+
+.btn-primary {
+    background-color: #e50914; /* Warna merah khas Netflix */
+    border: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #b20710; /* Warna hover merah yang lebih gelap */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .modal-body {
+        padding: 1rem;
+    }
+}
